@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		486829F326ACF2F900BE6E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486829F226ACF2F900BE6E66 /* AppDelegate.swift */; };
+		486829F526ACF2F900BE6E66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486829F426ACF2F900BE6E66 /* SceneDelegate.swift */; };
+		486829F726ACF2F900BE6E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486829F626ACF2F900BE6E66 /* ViewController.swift */; };
+		486829FA26ACF2F900BE6E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 486829F826ACF2F900BE6E66 /* Main.storyboard */; };
+		486829FD26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 486829FB26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld */; };
+		486829FF26ACF30000BE6E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486829FE26ACF30000BE6E66 /* Assets.xcassets */; };
+		48682A0226ACF30000BE6E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48682A0026ACF30000BE6E66 /* LaunchScreen.storyboard */; };
+		48682A0C26ACF4E400BE6E66 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48682A0B26ACF4E400BE6E66 /* NotificationManager.swift */; };
+		48682A1226ACFB3500BE6E66 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48682A1126ACFB3500BE6E66 /* Task.swift */; };
+		48EB820926AEF2780023F9C1 /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */; };
+		D8A3AA5E47048B67BAC131E4 /* Pods_LetsSaveEarth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5F7AADAB0507BF27BFEDE8 /* Pods_LetsSaveEarth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4352DE0E78952C7B7AF61565 /* Pods-LetsSaveEarth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsSaveEarth.release.xcconfig"; path = "Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth.release.xcconfig"; sourceTree = "<group>"; };
+		486829EF26ACF2F900BE6E66 /* LetsSaveEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsSaveEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		486829F226ACF2F900BE6E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		486829F426ACF2F900BE6E66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		486829F626ACF2F900BE6E66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		486829F926ACF2F900BE6E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		486829FC26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LetsSaveEarth.xcdatamodel; sourceTree = "<group>"; };
+		486829FE26ACF30000BE6E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48682A0126ACF30000BE6E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48682A0326ACF30000BE6E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48682A0B26ACF4E400BE6E66 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		48682A1126ACFB3500BE6E66 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
+		8D5F7AADAB0507BF27BFEDE8 /* Pods_LetsSaveEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsSaveEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADABCC5692A93BAF64BD8466 /* Pods-LetsSaveEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsSaveEarth.debug.xcconfig"; path = "Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		486829EC26ACF2F900BE6E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A3AA5E47048B67BAC131E4 /* Pods_LetsSaveEarth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22BCC8621C65748A58DBC13E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADABCC5692A93BAF64BD8466 /* Pods-LetsSaveEarth.debug.xcconfig */,
+				4352DE0E78952C7B7AF61565 /* Pods-LetsSaveEarth.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		486829E626ACF2F900BE6E66 = {
+			isa = PBXGroup;
+			children = (
+				486829F126ACF2F900BE6E66 /* LetsSaveEarth */,
+				486829F026ACF2F900BE6E66 /* Products */,
+				22BCC8621C65748A58DBC13E /* Pods */,
+				A2919EA8A49786CDFEF25A89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		486829F026ACF2F900BE6E66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				486829EF26ACF2F900BE6E66 /* LetsSaveEarth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		486829F126ACF2F900BE6E66 /* LetsSaveEarth */ = {
+			isa = PBXGroup;
+			children = (
+				48682A1026ACFB2400BE6E66 /* Model */,
+				48682A0F26ACF86600BE6E66 /* ViewController */,
+				48682A0A26ACF4D800BE6E66 /* Manager */,
+				486829F226ACF2F900BE6E66 /* AppDelegate.swift */,
+				486829F426ACF2F900BE6E66 /* SceneDelegate.swift */,
+				486829FE26ACF30000BE6E66 /* Assets.xcassets */,
+				48682A0026ACF30000BE6E66 /* LaunchScreen.storyboard */,
+				48682A0326ACF30000BE6E66 /* Info.plist */,
+				486829FB26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld */,
+			);
+			path = LetsSaveEarth;
+			sourceTree = "<group>";
+		};
+		48682A0A26ACF4D800BE6E66 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				48682A0B26ACF4E400BE6E66 /* NotificationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		48682A0F26ACF86600BE6E66 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				486829F626ACF2F900BE6E66 /* ViewController.swift */,
+				486829F826ACF2F900BE6E66 /* Main.storyboard */,
+				48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48682A1026ACFB2400BE6E66 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48682A1126ACFB3500BE6E66 /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2919EA8A49786CDFEF25A89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D5F7AADAB0507BF27BFEDE8 /* Pods_LetsSaveEarth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		486829EE26ACF2F900BE6E66 /* LetsSaveEarth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48682A0626ACF30000BE6E66 /* Build configuration list for PBXNativeTarget "LetsSaveEarth" */;
+			buildPhases = (
+				04230FEBA545E86364F60E2B /* [CP] Check Pods Manifest.lock */,
+				486829EB26ACF2F900BE6E66 /* Sources */,
+				486829EC26ACF2F900BE6E66 /* Frameworks */,
+				486829ED26ACF2F900BE6E66 /* Resources */,
+				EEA38EBF521CB651CBD2EE2B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetsSaveEarth;
+			productName = LetsSaveEarth;
+			productReference = 486829EF26ACF2F900BE6E66 /* LetsSaveEarth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		486829E726ACF2F900BE6E66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					486829EE26ACF2F900BE6E66 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 486829EA26ACF2F900BE6E66 /* Build configuration list for PBXProject "LetsSaveEarth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 486829E626ACF2F900BE6E66;
+			productRefGroup = 486829F026ACF2F900BE6E66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				486829EE26ACF2F900BE6E66 /* LetsSaveEarth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		486829ED26ACF2F900BE6E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48682A0226ACF30000BE6E66 /* LaunchScreen.storyboard in Resources */,
+				486829FF26ACF30000BE6E66 /* Assets.xcassets in Resources */,
+				486829FA26ACF2F900BE6E66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04230FEBA545E86364F60E2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsSaveEarth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEA38EBF521CB651CBD2EE2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		486829EB26ACF2F900BE6E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				486829F726ACF2F900BE6E66 /* ViewController.swift in Sources */,
+				48EB820926AEF2780023F9C1 /* AlarmSettingViewController.swift in Sources */,
+				486829FD26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld in Sources */,
+				48682A0C26ACF4E400BE6E66 /* NotificationManager.swift in Sources */,
+				486829F326ACF2F900BE6E66 /* AppDelegate.swift in Sources */,
+				48682A1226ACFB3500BE6E66 /* Task.swift in Sources */,
+				486829F526ACF2F900BE6E66 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		486829F826ACF2F900BE6E66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				486829F926ACF2F900BE6E66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48682A0026ACF30000BE6E66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48682A0126ACF30000BE6E66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48682A0426ACF30000BE6E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48682A0526ACF30000BE6E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48682A0726ACF30000BE6E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADABCC5692A93BAF64BD8466 /* Pods-LetsSaveEarth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LetsSaveEarth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LetsSaveEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48682A0826ACF30000BE6E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4352DE0E78952C7B7AF61565 /* Pods-LetsSaveEarth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LetsSaveEarth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LetsSaveEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		486829EA26ACF2F900BE6E66 /* Build configuration list for PBXProject "LetsSaveEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48682A0426ACF30000BE6E66 /* Debug */,
+				48682A0526ACF30000BE6E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48682A0626ACF30000BE6E66 /* Build configuration list for PBXNativeTarget "LetsSaveEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48682A0726ACF30000BE6E66 /* Debug */,
+				48682A0826ACF30000BE6E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		486829FB26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				486829FC26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodel */,
+			);
+			currentVersion = 486829FC26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodel */;
+			path = LetsSaveEarth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 486829E726ACF2F900BE6E66 /* Project object */;
+}
