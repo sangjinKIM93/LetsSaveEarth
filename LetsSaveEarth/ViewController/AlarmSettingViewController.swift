@@ -11,6 +11,12 @@ import SnapKit
 
 class AlarmSettingViewController: UIViewController {
     
+    let datePicker = UIDatePicker().then {
+        $0.datePickerMode = .time
+        $0.locale = Locale(identifier: "ko_KR")
+        // 추후 timeZone은 local로 수정
+        $0.timeZone = TimeZone.init(identifier: "UTC")
+    }
     let setAlarmButton = UIButton().then {
         $0.backgroundColor = .systemGray
         $0.setTitleColor(.blue, for: .normal)
@@ -35,8 +41,15 @@ class AlarmSettingViewController: UIViewController {
     private func setupView() {
         self.view.backgroundColor = .white
         
-        [setAlarmButton].forEach {
+        [datePicker, setAlarmButton].forEach {
             self.view.addSubview($0)
+        }
+        
+        datePicker.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(100)
+            $0.width.equalTo(200)
+            $0.height.equalTo(100)
+            $0.centerX.equalToSuperview()
         }
         
         setAlarmButton.snp.makeConstraints {
@@ -54,15 +67,10 @@ class AlarmSettingViewController: UIViewController {
     }
     
     private func makeReminder() -> Task {
-        let currentDate = Date()
-        var dateComponent = DateComponents()
-        dateComponent.hour = 18
-        dateComponent.minute = 30
-        let futureDate = Calendar.current.date(byAdding: dateComponent, to: currentDate)
+        let date = datePicker.date
+        print("루루\(date)")
         
-        print("루루\(futureDate)")
-        
-        let reminder = Reminder(date: futureDate)
+        let reminder = Reminder(date: date)
         let task = Task(name: "test", reminder: reminder)
         
         return task
