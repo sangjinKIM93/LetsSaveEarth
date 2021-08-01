@@ -15,7 +15,7 @@ class AlarmSettingViewController: UIViewController {
         $0.datePickerMode = .time
         $0.locale = Locale(identifier: "ko_KR")
         // 추후 timeZone은 local로 수정
-        $0.timeZone = TimeZone.init(identifier: "UTC")
+//        $0.timeZone = TimeZone.init(identifier: "UTC")xq
     }
     let setAlarmButton = UIButton().then {
         $0.backgroundColor = .systemGray
@@ -23,6 +23,8 @@ class AlarmSettingViewController: UIViewController {
         $0.setTitle("알림 설정", for: .normal)
         $0.addTarget(self, action: #selector(setAlarm), for: .touchUpInside)
     }
+    
+    let viewModel = AlarmSettingViewModel()
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -61,17 +63,21 @@ class AlarmSettingViewController: UIViewController {
     }
         
     @objc func setAlarm() {
-        // for문 돌릴 필요없이 그냥 repeat 하고 시작한 날짜 기준으로 날짜 세기?
-        // Nope! 왜냐면 매일 알림 내용이 달라
-        NotificationManager.shared.scheduleNotification(task: makeReminder())
+        for i in 0..<7 {
+            let task = makeReminder(dayAdded: i,
+                                    title: viewModel.reminderMessages[i].title,
+                                    body: viewModel.reminderMessages[i].body)
+            NotificationManager.shared.scheduleNotification(task: task)
+        }
     }
     
-    private func makeReminder() -> Task {
-        let date = datePicker.date
+    private func makeReminder(dayAdded: Int, title: String, body: String) -> Task {
+        var date = datePicker.date
+        date.addTimeInterval(TimeInterval(60*60*24*dayAdded))   // TimeInterval은 기존 단위가 second
         print("루루\(date)")
         
         let reminder = Reminder(date: date)
-        let task = Task(name: "test", reminder: reminder)
+        let task = Task(name: title, body: body, reminder: reminder)
         
         return task
     }

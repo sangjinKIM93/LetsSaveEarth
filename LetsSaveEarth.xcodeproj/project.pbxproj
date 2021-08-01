@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4857C19626B6662100E93608 /* AlarmSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4857C19526B6662100E93608 /* AlarmSettingViewModel.swift */; };
 		486829F326ACF2F900BE6E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486829F226ACF2F900BE6E66 /* AppDelegate.swift */; };
 		486829F526ACF2F900BE6E66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486829F426ACF2F900BE6E66 /* SceneDelegate.swift */; };
 		486829F726ACF2F900BE6E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486829F626ACF2F900BE6E66 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		4352DE0E78952C7B7AF61565 /* Pods-LetsSaveEarth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsSaveEarth.release.xcconfig"; path = "Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth.release.xcconfig"; sourceTree = "<group>"; };
+		4857C19526B6662100E93608 /* AlarmSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewModel.swift; sourceTree = "<group>"; };
 		486829EF26ACF2F900BE6E66 /* LetsSaveEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsSaveEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		486829F226ACF2F900BE6E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		486829F426ACF2F900BE6E66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +58,15 @@
 				ADABCC5692A93BAF64BD8466 /* Pods-LetsSaveEarth.debug.xcconfig */,
 				4352DE0E78952C7B7AF61565 /* Pods-LetsSaveEarth.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4857C19426B6660C00E93608 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4857C19526B6662100E93608 /* AlarmSettingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		486829E626ACF2F900BE6E66 = {
@@ -81,6 +90,7 @@
 		486829F126ACF2F900BE6E66 /* LetsSaveEarth */ = {
 			isa = PBXGroup;
 			children = (
+				4857C19426B6660C00E93608 /* ViewModel */,
 				48682A1026ACFB2400BE6E66 /* Model */,
 				48682A0F26ACF86600BE6E66 /* ViewController */,
 				48682A0A26ACF4D800BE6E66 /* Manager */,
@@ -247,6 +257,7 @@
 				486829FD26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld in Sources */,
 				48682A0C26ACF4E400BE6E66 /* NotificationManager.swift in Sources */,
 				486829F326ACF2F900BE6E66 /* AppDelegate.swift in Sources */,
+				4857C19626B6662100E93608 /* AlarmSettingViewModel.swift in Sources */,
 				48682A1226ACFB3500BE6E66 /* Task.swift in Sources */,
 				486829F526ACF2F900BE6E66 /* SceneDelegate.swift in Sources */,
 			);
