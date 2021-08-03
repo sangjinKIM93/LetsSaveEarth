@@ -17,6 +17,9 @@
 		48682A0226ACF30000BE6E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48682A0026ACF30000BE6E66 /* LaunchScreen.storyboard */; };
 		48682A0C26ACF4E400BE6E66 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48682A0B26ACF4E400BE6E66 /* NotificationManager.swift */; };
 		48682A1226ACFB3500BE6E66 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48682A1126ACFB3500BE6E66 /* Task.swift */; };
+		4888FEFA26B969990054576C /* RoundedGrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FEF926B969990054576C /* RoundedGrayTextField.swift */; };
+		4888FEFF26B96E0E0054576C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FEFE26B96E0E0054576C /* UITextField.swift */; };
+		4888FF0326B970F50054576C /* BMHANNAAir.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4888FF0226B970F50054576C /* BMHANNAAir.otf */; };
 		48EB820926AEF2780023F9C1 /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */; };
 		D8A3AA5E47048B67BAC131E4 /* Pods_LetsSaveEarth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5F7AADAB0507BF27BFEDE8 /* Pods_LetsSaveEarth.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +38,9 @@
 		48682A0326ACF30000BE6E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48682A0B26ACF4E400BE6E66 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		48682A1126ACFB3500BE6E66 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		4888FEF926B969990054576C /* RoundedGrayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedGrayTextField.swift; sourceTree = "<group>"; };
+		4888FEFE26B96E0E0054576C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		4888FF0226B970F50054576C /* BMHANNAAir.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMHANNAAir.otf; path = ../../../../Downloads/BMHANNAAir.otf; sourceTree = "<group>"; };
 		48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
 		8D5F7AADAB0507BF27BFEDE8 /* Pods_LetsSaveEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsSaveEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADABCC5692A93BAF64BD8466 /* Pods-LetsSaveEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsSaveEarth.debug.xcconfig"; path = "Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,15 +96,17 @@
 		486829F126ACF2F900BE6E66 /* LetsSaveEarth */ = {
 			isa = PBXGroup;
 			children = (
+				4888FF0126B970D60054576C /* Resource */,
+				4888FEFD26B96E030054576C /* Extension */,
+				4888FEF826B969740054576C /* CustomView */,
 				4857C19426B6660C00E93608 /* ViewModel */,
 				48682A1026ACFB2400BE6E66 /* Model */,
 				48682A0F26ACF86600BE6E66 /* ViewController */,
 				48682A0A26ACF4D800BE6E66 /* Manager */,
 				486829F226ACF2F900BE6E66 /* AppDelegate.swift */,
 				486829F426ACF2F900BE6E66 /* SceneDelegate.swift */,
-				486829FE26ACF30000BE6E66 /* Assets.xcassets */,
-				48682A0026ACF30000BE6E66 /* LaunchScreen.storyboard */,
 				48682A0326ACF30000BE6E66 /* Info.plist */,
+				48682A0026ACF30000BE6E66 /* LaunchScreen.storyboard */,
 				486829FB26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld */,
 			);
 			path = LetsSaveEarth;
@@ -128,6 +136,31 @@
 				48682A1126ACFB3500BE6E66 /* Task.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4888FEF826B969740054576C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				4888FEF926B969990054576C /* RoundedGrayTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		4888FEFD26B96E030054576C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4888FEFE26B96E0E0054576C /* UITextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4888FF0126B970D60054576C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				486829FE26ACF30000BE6E66 /* Assets.xcassets */,
+				4888FF0226B970F50054576C /* BMHANNAAir.otf */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		A2919EA8A49786CDFEF25A89 /* Frameworks */ = {
@@ -199,6 +232,7 @@
 			files = (
 				48682A0226ACF30000BE6E66 /* LaunchScreen.storyboard in Resources */,
 				486829FF26ACF30000BE6E66 /* Assets.xcassets in Resources */,
+				4888FF0326B970F50054576C /* BMHANNAAir.otf in Resources */,
 				486829FA26ACF2F900BE6E66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4888FEFA26B969990054576C /* RoundedGrayTextField.swift in Sources */,
+				4888FEFF26B96E0E0054576C /* UITextField.swift in Sources */,
 				486829F726ACF2F900BE6E66 /* ViewController.swift in Sources */,
 				48EB820926AEF2780023F9C1 /* AlarmSettingViewController.swift in Sources */,
 				486829FD26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld in Sources */,

@@ -11,6 +11,11 @@ import SnapKit
 
 class AlarmSettingViewController: UIViewController {
     
+    let nickNameTextField = RoundedGrayTextField().then {
+        $0.textField.placeholder = "닉네임"
+        $0.textField.setCustomPlaceholder(placeholderColor: .systemGray2, font: .boldSystemFont(ofSize: 20))
+    }
+    
     let datePicker = UIDatePicker().then {
         $0.datePickerMode = .time
         $0.locale = Locale(identifier: "ko_KR")
@@ -20,6 +25,7 @@ class AlarmSettingViewController: UIViewController {
     let setAlarmButton = UIButton().then {
         $0.backgroundColor = .systemGray
         $0.setTitleColor(.blue, for: .normal)
+        $0.titleLabel?.font = UIFont(name: "BMHANNAAir", size: 15)
         $0.setTitle("알림 설정", for: .normal)
         $0.addTarget(self, action: #selector(setAlarm), for: .touchUpInside)
     }
@@ -43,12 +49,18 @@ class AlarmSettingViewController: UIViewController {
     private func setupView() {
         self.view.backgroundColor = .white
         
-        [datePicker, setAlarmButton].forEach {
+        [nickNameTextField, datePicker, setAlarmButton].forEach {
             self.view.addSubview($0)
         }
         
+        nickNameTextField.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(50)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(100)
+        }
+        
         datePicker.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(100)
+            $0.top.equalToSuperview().offset(200)
             $0.width.equalTo(200)
             $0.height.equalTo(100)
             $0.centerX.equalToSuperview()
