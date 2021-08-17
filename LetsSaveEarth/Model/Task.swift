@@ -27,7 +27,7 @@ struct Reminder: Codable {
     var timeInterval: TimeInterval?
     var date: Date?
     var location: LocationReminder?
-    var reminderType: ReminderType = .time
+    var reminderType: ReminderType = .calendar
     var repeats = false
 }
 

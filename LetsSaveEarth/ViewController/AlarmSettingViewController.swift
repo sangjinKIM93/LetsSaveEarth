@@ -25,9 +25,6 @@ class AlarmSettingViewController: UIViewController {
     }
     let datePicker = UIDatePicker().then {
         $0.datePickerMode = .time
-        $0.locale = Locale(identifier: "ko_KR")
-        // 추후 timeZone은 local로 수정
-//        $0.timeZone = TimeZone.init(identifier: "UTC")xq
     }
     let setAlarmButton = UIButton().then {
         $0.backgroundColor = .white
@@ -99,6 +96,8 @@ class AlarmSettingViewController: UIViewController {
             datePicker.sizeToFit()
         }
         
+        datePicker.addTarget(self, action: #selector(timeChanged(sender:)), for: .valueChanged)
+        
         let toolBar = UIToolbar()
         let flexibleButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let doneBtn = UIBarButtonItem(title: "완료", style: .done, target: self, action: #selector(donePressed))
@@ -113,11 +112,13 @@ class AlarmSettingViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
     }
     
-    @objc func donePressed() {
+    @objc func timeChanged(sender: UIDatePicker) {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "hh : mm"
-        timeTextField.textField.text = dateFormatter.string(from: datePicker.date)
-        
+        dateFormatter.dateFormat = "hh : mm a"
+        timeTextField.textField.text = dateFormatter.string(from: sender.date)
+    }
+    
+    @objc func donePressed() {
         view.endEditing(true)
     }
     
@@ -137,7 +138,6 @@ class AlarmSettingViewController: UIViewController {
     private func makeReminder(dayAdded: Int, title: String, body: String) -> Task {
         var date = datePicker.date
         date.addTimeInterval(TimeInterval(60*60*24*dayAdded))   // TimeInterval은 기존 단위가 second
-        print("루루\(date)")
         
         let reminder = Reminder(date: date)
         let task = Task(name: title, body: body, reminder: reminder)
