@@ -11,11 +11,18 @@ import SnapKit
 
 class AlarmSettingViewController: UIViewController {
     
+    let titleLabel = UILabel().then {
+        $0.text = "+ 알림 설정"
+        $0.font = .boldSystemFont(ofSize: 30)
+    }
     let nickNameTextField = RoundedGrayTextField().then {
         $0.textField.placeholder = "닉네임"
         $0.textField.setCustomPlaceholder(placeholderColor: .systemGray2, font: .boldSystemFont(ofSize: 20))
     }
-    
+    let timeTextField = RoundedGrayTextField().then {
+        $0.textField.placeholder = "시간 선택"
+        $0.textField.setCustomPlaceholder(placeholderColor: .systemGray2, font: .boldSystemFont(ofSize: 20))
+    }
     let datePicker = UIDatePicker().then {
         $0.datePickerMode = .time
         $0.locale = Locale(identifier: "ko_KR")
@@ -23,11 +30,20 @@ class AlarmSettingViewController: UIViewController {
 //        $0.timeZone = TimeZone.init(identifier: "UTC")xq
     }
     let setAlarmButton = UIButton().then {
-        $0.backgroundColor = .systemGray
+        $0.backgroundColor = .white
+        $0.layer.cornerRadius = 10
+        $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.systemGray4.cgColor
         $0.setTitleColor(.blue, for: .normal)
-        $0.titleLabel?.font = UIFont(name: "BMHANNAAir", size: 15)
-        $0.setTitle("알림 설정", for: .normal)
+        $0.titleLabel?.font = .boldSystemFont(ofSize: 20)
+        $0.setTitleColor(.black, for: .normal)
+        $0.setTitle("완료", for: .normal)
         $0.addTarget(self, action: #selector(setAlarm), for: .touchUpInside)
+        // shadow
+        $0.layer.shadowColor = UIColor.black.cgColor    // 조금만 연하게 하면 좋을듯
+        $0.layer.shadowOpacity = 0.8
+        $0.layer.shadowRadius = 3.0
+        $0.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
     }
     
     let viewModel = AlarmSettingViewModel()
@@ -44,34 +60,69 @@ class AlarmSettingViewController: UIViewController {
         super.viewDidLoad()
 
         self.setupView()
+        self.setDatePicker()
     }
     
     private func setupView() {
         self.view.backgroundColor = .white
         
-        [nickNameTextField, datePicker, setAlarmButton].forEach {
+        [titleLabel, nickNameTextField, timeTextField, setAlarmButton].forEach {
             self.view.addSubview($0)
         }
         
-        nickNameTextField.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(50)
+        titleLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().offset(20)
             $0.leading.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(100)
         }
-        
-        datePicker.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(200)
-            $0.width.equalTo(200)
-            $0.height.equalTo(100)
-            $0.centerX.equalToSuperview()
+        nickNameTextField.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(20)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(70)
+        }
+        timeTextField.snp.makeConstraints {
+            $0.top.equalTo(nickNameTextField.snp.bottom).offset(20)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(70)
         }
         
         setAlarmButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.width.equalTo(100)
+            $0.width.equalTo(150)
             $0.height.equalTo(50)
             $0.bottom.equalToSuperview().offset(-50)
         }
+    }
+    
+    private func setDatePicker() {
+        if #available(iOS 14, *) {
+            datePicker.preferredDatePickerStyle = .wheels
+            datePicker.sizeToFit()
+        }
+        
+        let toolBar = UIToolbar()
+        let flexibleButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneBtn = UIBarButtonItem(title: "완료", style: .done, target: self, action: #selector(donePressed))
+        toolBar.setItems([flexibleButton, doneBtn], animated: true)
+        toolBar.sizeToFit()
+        
+        
+        timeTextField.textField.inputAccessoryView = toolBar
+        timeTextField.textField.inputView = datePicker
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func donePressed() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "hh : mm"
+        timeTextField.textField.text = dateFormatter.string(from: datePicker.date)
+        
+        view.endEditing(true)
+    }
+    
+    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
+        view.endEditing(true)
     }
         
     @objc func setAlarm() {
