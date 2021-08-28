@@ -17,6 +17,8 @@
 		48682A0226ACF30000BE6E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48682A0026ACF30000BE6E66 /* LaunchScreen.storyboard */; };
 		48682A0C26ACF4E400BE6E66 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48682A0B26ACF4E400BE6E66 /* NotificationManager.swift */; };
 		48682A1226ACFB3500BE6E66 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48682A1126ACFB3500BE6E66 /* Task.swift */; };
+		486A9A3326D9F1F50011BD92 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A9A3226D9F1F50011BD92 /* ContentViewModel.swift */; };
+		486A9A3826D9F4AF0011BD92 /* MeditationContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A9A3726D9F4AF0011BD92 /* MeditationContentTableViewCell.swift */; };
 		4888FEFA26B969990054576C /* RoundedGrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FEF926B969990054576C /* RoundedGrayTextField.swift */; };
 		4888FEFF26B96E0E0054576C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FEFE26B96E0E0054576C /* UITextField.swift */; };
 		4888FF0326B970F50054576C /* BMHANNAAir.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4888FF0226B970F50054576C /* BMHANNAAir.otf */; };
@@ -38,6 +40,8 @@
 		48682A0326ACF30000BE6E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48682A0B26ACF4E400BE6E66 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		48682A1126ACFB3500BE6E66 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		486A9A3226D9F1F50011BD92 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		486A9A3726D9F4AF0011BD92 /* MeditationContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationContentTableViewCell.swift; sourceTree = "<group>"; };
 		4888FEF926B969990054576C /* RoundedGrayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedGrayTextField.swift; sourceTree = "<group>"; };
 		4888FEFE26B96E0E0054576C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		4888FF0226B970F50054576C /* BMHANNAAir.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMHANNAAir.otf; path = ../../../../Downloads/BMHANNAAir.otf; sourceTree = "<group>"; };
@@ -71,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				4857C19526B6662100E93608 /* AlarmSettingViewModel.swift */,
+				486A9A3226D9F1F50011BD92 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 		486829F126ACF2F900BE6E66 /* LetsSaveEarth */ = {
 			isa = PBXGroup;
 			children = (
+				486A9A3526D9F48D0011BD92 /* View */,
 				4888FF0126B970D60054576C /* Resource */,
 				4888FEFD26B96E030054576C /* Extension */,
 				4888FEF826B969740054576C /* CustomView */,
@@ -136,6 +142,22 @@
 				48682A1126ACFB3500BE6E66 /* Task.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		486A9A3526D9F48D0011BD92 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				486A9A3626D9F4950011BD92 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		486A9A3626D9F4950011BD92 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				486A9A3726D9F4AF0011BD92 /* MeditationContentTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		4888FEF826B969740054576C /* CustomView */ = {
@@ -293,6 +315,8 @@
 				486829FD26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld in Sources */,
 				48682A0C26ACF4E400BE6E66 /* NotificationManager.swift in Sources */,
 				486829F326ACF2F900BE6E66 /* AppDelegate.swift in Sources */,
+				486A9A3826D9F4AF0011BD92 /* MeditationContentTableViewCell.swift in Sources */,
+				486A9A3326D9F1F50011BD92 /* ContentViewModel.swift in Sources */,
 				4857C19626B6662100E93608 /* AlarmSettingViewModel.swift in Sources */,
 				48682A1226ACFB3500BE6E66 /* Task.swift in Sources */,
 				486829F526ACF2F900BE6E66 /* SceneDelegate.swift in Sources */,
