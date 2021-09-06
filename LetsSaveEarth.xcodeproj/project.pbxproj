@@ -22,6 +22,9 @@
 		4888FEFA26B969990054576C /* RoundedGrayTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FEF926B969990054576C /* RoundedGrayTextField.swift */; };
 		4888FEFF26B96E0E0054576C /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888FEFE26B96E0E0054576C /* UITextField.swift */; };
 		4888FF0326B970F50054576C /* BMHANNAAir.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4888FF0226B970F50054576C /* BMHANNAAir.otf */; };
+		48987EE926DE3DC900B6B771 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48987EE826DE3DC900B6B771 /* PlayerViewController.swift */; };
+		48D86E2426E4B1850012D14C /* sound_piano_three_min.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48D86E2326E4B1850012D14C /* sound_piano_three_min.mp3 */; };
+		48D86E2726E4B18B0012D14C /* sound_rain_ten_min.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 48D86E2626E4B18B0012D14C /* sound_rain_ten_min.mp3 */; };
 		48EB820926AEF2780023F9C1 /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */; };
 		D8A3AA5E47048B67BAC131E4 /* Pods_LetsSaveEarth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5F7AADAB0507BF27BFEDE8 /* Pods_LetsSaveEarth.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +48,9 @@
 		4888FEF926B969990054576C /* RoundedGrayTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedGrayTextField.swift; sourceTree = "<group>"; };
 		4888FEFE26B96E0E0054576C /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		4888FF0226B970F50054576C /* BMHANNAAir.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BMHANNAAir.otf; path = ../../../../Downloads/BMHANNAAir.otf; sourceTree = "<group>"; };
+		48987EE826DE3DC900B6B771 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		48D86E2326E4B1850012D14C /* sound_piano_three_min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sound_piano_three_min.mp3; path = ../../../../../Downloads/sound_piano_three_min.mp3; sourceTree = "<group>"; };
+		48D86E2626E4B18B0012D14C /* sound_rain_ten_min.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sound_rain_ten_min.mp3; path = ../../../../../Downloads/sound_rain_ten_min.mp3; sourceTree = "<group>"; };
 		48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
 		8D5F7AADAB0507BF27BFEDE8 /* Pods_LetsSaveEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsSaveEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADABCC5692A93BAF64BD8466 /* Pods-LetsSaveEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsSaveEarth.debug.xcconfig"; path = "Target Support Files/Pods-LetsSaveEarth/Pods-LetsSaveEarth.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +138,7 @@
 				486829F626ACF2F900BE6E66 /* ViewController.swift */,
 				486829F826ACF2F900BE6E66 /* Main.storyboard */,
 				48EB820826AEF2780023F9C1 /* AlarmSettingViewController.swift */,
+				48987EE826DE3DC900B6B771 /* PlayerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -179,10 +186,20 @@
 		4888FF0126B970D60054576C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				48D86E2226E4B14E0012D14C /* Audio */,
 				486829FE26ACF30000BE6E66 /* Assets.xcassets */,
 				4888FF0226B970F50054576C /* BMHANNAAir.otf */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		48D86E2226E4B14E0012D14C /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				48D86E2626E4B18B0012D14C /* sound_rain_ten_min.mp3 */,
+				48D86E2326E4B1850012D14C /* sound_piano_three_min.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		A2919EA8A49786CDFEF25A89 /* Frameworks */ = {
@@ -253,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				48682A0226ACF30000BE6E66 /* LaunchScreen.storyboard in Resources */,
+				48D86E2726E4B18B0012D14C /* sound_rain_ten_min.mp3 in Resources */,
+				48D86E2426E4B1850012D14C /* sound_piano_three_min.mp3 in Resources */,
 				486829FF26ACF30000BE6E66 /* Assets.xcassets in Resources */,
 				4888FF0326B970F50054576C /* BMHANNAAir.otf in Resources */,
 				486829FA26ACF2F900BE6E66 /* Main.storyboard in Resources */,
@@ -315,6 +334,7 @@
 				486829FD26ACF2F900BE6E66 /* LetsSaveEarth.xcdatamodeld in Sources */,
 				48682A0C26ACF4E400BE6E66 /* NotificationManager.swift in Sources */,
 				486829F326ACF2F900BE6E66 /* AppDelegate.swift in Sources */,
+				48987EE926DE3DC900B6B771 /* PlayerViewController.swift in Sources */,
 				486A9A3826D9F4AF0011BD92 /* MeditationContentTableViewCell.swift in Sources */,
 				486A9A3326D9F1F50011BD92 /* ContentViewModel.swift in Sources */,
 				4857C19626B6662100E93608 /* AlarmSettingViewModel.swift in Sources */,

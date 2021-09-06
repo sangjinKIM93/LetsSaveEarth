@@ -61,6 +61,12 @@ extension ViewController: UITableViewDataSource {
 }
 
 extension ViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let position = indexPath.row
+        let vc = PlayerViewController()
+        
+        present(vc, animated: true)
+    }
 }
 
